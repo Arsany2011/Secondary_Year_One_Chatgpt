@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import PageContainer from "../components/layout/PageContainer";
 import HeroScene from "../components/three/HeroScene";
 import useMotivation from "../hooks/useMotivation";
+import StudyScene3D from "../components/3d/StudyScene3D";
 
 function Home() {
   const {

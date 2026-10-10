@@ -1,0 +1,57 @@
+.study-scene-3d {
+  position: absolute;
+
+  right: 0;
+  top: 50%;
+
+  width: 310px;
+  height: 310px;
+
+  transform: translateY(-50%);
+
+  pointer-events: auto;
+
+  z-index: 2;
+
+  filter:
+    drop-shadow(
+      0 0 35px
+      rgba(212, 163, 115, 0.16)
+    );
+}
+
+.study-scene-3d canvas {
+  display: block;
+
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 700px) {
+  .study-scene-3d {
+    right: -25px;
+    top: auto;
+    bottom: -35px;
+
+    width: 220px;
+    height: 220px;
+
+    transform: none;
+
+    opacity: 0.8;
+  }
+}
+
+@media (max-width: 400px) {
+  .study-scene-3d {
+    right: -45px;
+    bottom: -45px;
+
+    width: 190px;
+    height: 190px;
+  }
+}   
